@@ -5,16 +5,20 @@ export const EventLoader = async () => {
   const response = await fetch("http://localhost:8080/events")
 
   if (!response.ok) {
-    // ...
+    throw new Response(JSON.stringify({ message: "Could Not fetch events" }), { status: 500 })
   } else {
     const resData = await response.json()
-    return resData.events
+    return resData
   }
 }
 
 function EventsPage() {
-  const events = useLoaderData()
-  console.log(events)
+  const { events, isError, message } = useLoaderData()
+
+  if (isError) {
+    return <p>{message}</p>
+  }
+
   return (
     <>
       <EventsList events={events} />

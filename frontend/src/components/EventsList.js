@@ -7,18 +7,19 @@ function EventsList({ events }) {
     <div className={classes.events}>
       <h1>All Events</h1>
       <ul className={classes.list}>
-        {events.map((event) => (
-          // <EventItem key={event.id} events={events} />
-          <li key={event.id} className={classes.item}>
-            <Link to={`/events/${event.id}`}>
-              <img src={event.image} alt={event.title} />
-              <div className={classes.content}>
-                <h2>{event.title}</h2>
-                <time>{event.date}</time>
-              </div>
-            </Link>
-          </li>
-        ))}
+        {events &&
+          events.map((event) => (
+            // <EventItem key={event.id} events={events} />
+            <li key={event.id} className={classes.item}>
+              <Link to={`/events/${event.id}`}>
+                <img src={event.image} alt={event.title} />
+                <div className={classes.content}>
+                  <h2>{event.title}</h2>
+                  <time>{event.date}</time>
+                </div>
+              </Link>
+            </li>
+          ))}
       </ul>
     </div>
   )
