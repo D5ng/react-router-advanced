@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom"
 
-import classes from './EventForm.module.css';
+import classes from "./EventForm.module.css"
 
 function EventForm({ method, event }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   function cancelHandler() {
-    navigate('..');
+    navigate("..")
   }
 
   return (
@@ -33,7 +33,7 @@ function EventForm({ method, event }) {
         <button>Save</button>
       </div>
     </form>
-  );
+  )
 }
 
-export default EventForm;
+export default EventForm

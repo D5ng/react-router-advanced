@@ -1,4 +1,4 @@
-import classes from './EventsNavigation.module.css';
+import classes from "./EventsNavigation.module.css"
 
 function EventsNavigation() {
   return (
@@ -14,7 +14,7 @@ function EventsNavigation() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default EventsNavigation;
+export default EventsNavigation
