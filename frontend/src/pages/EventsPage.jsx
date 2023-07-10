@@ -2,7 +2,7 @@ import EventsList from "../components/EventsList"
 import { json, useLoaderData } from "react-router-dom"
 
 export const EventLoader = async () => {
-  const response = await fetch("http://localhost:8080/eventsfsdfds")
+  const response = await fetch("http://localhost:8080/events")
 
   if (!response.ok) {
     throw json({ message: "Could Not fetch events" }, { status: 500 })

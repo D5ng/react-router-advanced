@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import EventsPage, { EventLoader } from "./pages/EventsPage"
 import NewEventPage from "./pages/NewEventPage"
-import EventDetailPage from "./pages/EventDetailPage"
+import EventDetailPage, { eventDetailLoader } from "./pages/EventDetailPage"
 import EditEventPage from "./pages/EditEventPage"
 import RootPage from "./pages/RootPage"
 import EventsRoot from "./pages/EventsRoot"
@@ -26,7 +26,7 @@ function App() {
               element: <EventsPage />,
               loader: EventLoader,
             },
-            { path: ":id", element: <EventDetailPage /> },
+            { path: ":id", element: <EventDetailPage />, loader: eventDetailLoader },
             { path: "new", element: <NewEventPage /> },
             { path: ":id/edit", element: <EditEventPage /> },
           ],
