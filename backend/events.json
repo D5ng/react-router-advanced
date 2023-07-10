@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"TSX","image":"https://968663149-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LDS-orWYJdO9Wve6CUx%2F-MNtspY0k5n5FPYpM8-Z%2F-MNttd_-Ed6AlG--2ch5%2Ftypescript.jpeg?alt=media&token=80604d97-2371-4680-b950-42bf2f876efc","date":"2023-07-10","description":"TSX","id":"f4afd746-9a3a-4411-b96c-8e2a93c283cd"},{"title":"TypeScript","image":"https://968663149-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LDS-orWYJdO9Wve6CUx%2F-MNtspY0k5n5FPYpM8-Z%2F-MNttd_-Ed6AlG--2ch5%2Ftypescript.jpeg?alt=media&token=80604d97-2371-4680-b950-42bf2f876efc","date":"2023-07-10","description":"TypeScript","id":"d3fdb3c8-10be-47cc-a3bb-bc5e394dcddb"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
